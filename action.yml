@@ -71,7 +71,7 @@ runs:
         python-version: "${{ inputs.python-version }}"
     - name: Setup uv
       if: ${{ inputs.uv-version }}
-      uses: astral-sh/setup-uv@v6
+      uses: astral-sh/setup-uv@v7
       with:
         version: "${{ inputs.uv-version }}"
     - name: Get semantic-release version
